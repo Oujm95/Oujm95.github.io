@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇博客文章 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.搭建个人博客时遇到了哪些问题？2.问题是怎样得到解决的？解决步骤分别是？3.MarkdownPad挺好用的！##参考网址：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;av44544186   ##特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难">
+  <meta name="description" content="搭建个人博客具体步骤这里是基于HEXO博客框架–Windows系统搭建的  首先下载安装Node.js(下载网址：Nodejs.org)    下载Git并安装，点击进入Git\bin\bash.exe配置环境变量及身份 配置Git环境变量：  找到git安装路径中git-core的位置，如F:\Git\mingw64\libexec\git-core 右键“计算机”-&amp;gt;“属性”-&amp;gt;“">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客文章">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.搭建个人博客时遇到了哪些问题？2.问题是怎样得到解决的？解决步骤分别是？3.MarkdownPad挺好用的！##参考网址：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;av44544186   ##特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难">
+<meta property="og:description" content="搭建个人博客具体步骤这里是基于HEXO博客框架–Windows系统搭建的  首先下载安装Node.js(下载网址：Nodejs.org)    下载Git并安装，点击进入Git\bin\bash.exe配置环境变量及身份 配置Git环境变量：  找到git安装路径中git-core的位置，如F:\Git\mingw64\libexec\git-core 右键“计算机”-&amp;gt;“属性”-&amp;gt;“">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-01T01:55:08.405Z">
+<meta property="og:updated_time" content="2019-11-01T05:49:44.254Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -172,9 +172,57 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-搭建个人博客时遇到了哪些问题？"><a href="#1-搭建个人博客时遇到了哪些问题？" class="headerlink" title="1.搭建个人博客时遇到了哪些问题？"></a>1.搭建个人博客时遇到了哪些问题？</h2><h2 id="2-问题是怎样得到解决的？解决步骤分别是？"><a href="#2-问题是怎样得到解决的？解决步骤分别是？" class="headerlink" title="2.问题是怎样得到解决的？解决步骤分别是？"></a>2.问题是怎样得到解决的？解决步骤分别是？</h2><h2 id="3-MarkdownPad挺好用的！"><a href="#3-MarkdownPad挺好用的！" class="headerlink" title="3.MarkdownPad挺好用的！"></a>3.MarkdownPad挺好用的！</h2><p>##参考网址：<a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186</a>  </p>
-<p>##特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难</p>
-
+        <h2 id="搭建个人博客具体步骤"><a href="#搭建个人博客具体步骤" class="headerlink" title="搭建个人博客具体步骤"></a>搭建个人博客具体步骤</h2><p>这里是基于HEXO博客框架–Windows系统搭建的</p>
+<ul>
+<li>首先下载安装Node.js(下载网址：Nodejs.org)</li>
+</ul>
+<hr>
+<ul>
+<li>下载Git并安装，点击进入Git\bin\bash.exe配置环境变量及身份</li>
+<li>配置Git环境变量： </li>
+<li>找到git安装路径中git-core的位置，如F:\Git\mingw64\libexec\git-core</li>
+<li>右键“计算机”-&gt;“属性”-&gt;“高级系统设置”-&gt;“环境变量”-&gt;在下方的“系统变量”中找到“path”-&gt;选中“path”并选择“编辑”-&gt;将找到的bin和git-core路径复制到其中-&gt;保存并退出</li>
+<li>注意：“path”中，每个路径之间要以英文输入状态下的分号——“;”作为间隔</li>
+<li>-</li>
+<li>配置身份：</li>
+<li>git config –global user.name “用户名” </li>
+<li>git config –global user.email “用户邮箱”</li>
+</ul>
+<hr>
+<ul>
+<li>打开DOS系统(win+R)</li>
+<li>输入 npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></li>
+<li>输入 cnpm install -g hexo-cli 安装HEXO博客框架</li>
+<li>选择目录(F:)新建文件夹 输入chdir blog</li>
+<li>输入 hexo init 初始化一个博客</li>
+<li>输入 hexo s 启动博客 在浏览器中网址栏输入<a href="http://localhost:4000即可启动" target="_blank" rel="noopener">http://localhost:4000即可启动</a></li>
+<li>-</li>
+<li>接下来创建第一篇博客文章</li>
+<li>输入 hexo n “我的第一篇博客文章”，此操作会在如F:\blog\source_posts 这样的目录下生成一个 我的第一篇博客文章.md文件</li>
+<li>输入 cd\source_posts 进入该目录</li>
+<li>输入 start 我的第一篇博客文章.md 打开该文件即可进行编辑内容 建议下载MarkdownPad2软件打开此类文件</li>
+<li>内容完成后，保存退出</li>
+<li>在DOS系统上输入cd../.. 退到blog目录</li>
+<li>输入 hexo g 即可生成文件</li>
+<li>再次输入hexo s 启动博客 网址栏输入localhost：4000启动刷新即可看见 “我的第一篇博客文章”</li>
+<li>至此个人博客已搭建完毕</li>
+<li>-</li>
+<li>然后把个人博客部署到github.com上</li>
+<li>首先登陆github.com个人网页，在网页右上角加号处点击”New repository”建立新仓</li>
+<li>在”Repository name”栏输入”xxxx”.github.io,此处xxxx为你的用户名</li>
+<li>注意：此处必须按照此格式，不能更改</li>
+<li>“Description”为描述栏，自由发挥即可，最后点击“Create repository”完成创建</li>
+<li>再返回DOS系统操作，输入 cnpm install –save hexo-deployer-git 安装一个部署的插件</li>
+<li>输入 start _config.yml打开此文件直接拖到最后一行找到 type：</li>
+<li>在type：加上git后，注意git和冒号间需要一个空格</li>
+<li>换行输入repo：<a href="https://github.com/xxxx/xxxx.github.ioigit" target="_blank" rel="noopener">https://github.com/xxxx/xxxx.github.ioigit</a> xxxx为你的用户名</li>
+<li>换行输入 branch:master 保存退出</li>
+<li>换回DOS系统 输入hexo d 将个人博客部署至远端</li>
+<li>此时DOS系统会要求你输入你的github用户名及密码登入，输入回车即可</li>
+<li>注意密码输入的时候是不会被显示出来的</li>
+<li>至此，个人博客即被部署至Github上了</li>
+</ul>
+<h2 id="参考网址：https-www-bilibili-com-video-av44544186"><a href="#参考网址：https-www-bilibili-com-video-av44544186" class="headerlink" title="参考网址：https://www.bilibili.com/video/av44544186"></a>参考网址：<a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186</a></h2><h2 id="特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难"><a href="#特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难" class="headerlink" title="特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难"></a>特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难</h2>
       
 
       
