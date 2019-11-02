@@ -6,14 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>.md文件中语法错误会导致上传至博客 | Hexo</title>
+  <title>类之间的关系 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content=".md文件中语法错误会导致上传至博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;01&#x2F;md%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%AD%E6%B3%95%E9%94%99%E8%AF%AF%E4%BC%9A%E5%AF%BC%E8%87%B4%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%8D%9A%E5%AE%A2&#x2F;index.html">
+  <meta name="description" content="##类之间的关系  泛化关系：类和类之间的继承关系、接口和接口之间的继承关系  实现关系：类对接口的实现关系  关联关系：类和类之间的连接，一个类可以知道另一个类的属性、方法，在JAVA语言中使用成员变量体现。在当前对象中含有指向其他对象的引用，那么当前对象和被指向的对象之间就是关联关系，如我和朋友的关系。  聚合关系：是关联关系的一种，是较强的关联关系，是整体和部分的关系。整体不依赖部分，部分也">
+<meta property="og:type" content="article">
+<meta property="og:title" content="类之间的关系">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;02&#x2F;%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="##类之间的关系  泛化关系：类和类之间的继承关系、接口和接口之间的继承关系  实现关系：类对接口的实现关系  关联关系：类和类之间的连接，一个类可以知道另一个类的属性、方法，在JAVA语言中使用成员变量体现。在当前对象中含有指向其他对象的引用，那么当前对象和被指向的对象之间就是关联关系，如我和朋友的关系。  聚合关系：是关联关系的一种，是较强的关联关系，是整体和部分的关系。整体不依赖部分，部分也">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-01T14:36:33.917Z">
+<meta property="og:updated_time" content="2019-11-02T03:23:48.986Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -150,27 +152,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-md文件中语法错误会导致上传至博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-类之间的关系" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      .md文件中语法错误会导致上传至博客
+      类之间的关系
     </h1>
   
 
         
-        <a href="/2019/11/01/md%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%AD%E6%B3%95%E9%94%99%E8%AF%AF%E4%BC%9A%E5%AF%BC%E8%87%B4%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2019-11-01T14:36:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-01</time>
+        <a href="/2019/11/02/%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/" class="archive-article-date">
+  	<time datetime="2019-11-02T02:46:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>##类之间的关系</p>
+<ol>
+<li><p>泛化关系：类和类之间的继承关系、接口和接口之间的继承关系</p>
+</li>
+<li><p>实现关系：类对接口的实现关系</p>
+</li>
+<li><p>关联关系：类和类之间的连接，一个类可以知道另一个类的属性、方法，在JAVA语言中使用成员变量体现。在当前对象中含有指向其他对象的引用，那么当前对象和被指向的对象之间就是关联关系，如我和朋友的关系。</p>
+</li>
+<li><p>聚合关系：是关联关系的一种，是较强的关联关系，是整体和部分的关系。整体不依赖部分，部分也不依赖整体，整体无法决定部分的生命周期，如教室与单个学生的关系是聚合关系，教室与学生的集合之间的关系是关联关系。</p>
+</li>
+<li><p>合成关系：合成关系和聚合关系相似，区别在于整体和部分是紧密相连的，整体的生命周期决定部分的生命周期，如人和四肢的关系。</p>
+</li>
+<li><p>依赖关系 </p>
+</li>
+</ol>
+<p>##参考链接：<a href="https://www.bilibili.com/video/av11477533/?p=96" target="_blank" rel="noopener">https://www.bilibili.com/video/av11477533/?p=96</a></p>
+
       
 
       
@@ -249,7 +267,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/01/md%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%AD%E6%B3%95%E9%94%99%E8%AF%AF%E4%BC%9A%E5%AF%BC%E8%87%B4%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/02/%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -263,9 +281,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/11/02/is-a%E3%80%81is-like-a%E3%80%81has-a/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          is-a、is-like-a、has-a
+        
+      </div>
+    </a>
   
-    <a href="/2019/11/01/%E6%8E%A5%E5%8F%A3%E8%AF%AD%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">接口语法1.md</div>
+  
+    <a href="/2019/11/02/%E5%86%85%E9%83%A8%E7%B1%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">内部类</div>
       <i class="icon-circle-right"></i>
     </a>
   
