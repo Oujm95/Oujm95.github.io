@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>类之间的关系 | Hexo</title>
+  <title>数组的排序 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="类之间的关系">
+  <meta name="description" content="冒泡排序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="类之间的关系">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;02&#x2F;%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB&#x2F;index.html">
+<meta property="og:title" content="数组的排序">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;03&#x2F;%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="类之间的关系">
+<meta property="og:description" content="冒泡排序">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-03T06:25:20.557Z">
+<meta property="og:updated_time" content="2019-11-03T06:24:16.896Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,42 +152,71 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-类之间的关系" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-数组的排序" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      类之间的关系
+      数组的排序
     </h1>
   
 
         
-        <a href="/2019/11/02/%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/" class="archive-article-date">
-  	<time datetime="2019-11-02T02:46:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
+        <a href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2019-11-03T03:06:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="类之间的关系"><a href="#类之间的关系" class="headerlink" title="类之间的关系"></a>类之间的关系</h2><a id="more"></a>
-<ol>
-<li><p>泛化关系：类和类之间的继承关系、接口和接口之间的继承关系</p>
-</li>
-<li><p>实现关系：类对接口的实现关系</p>
-</li>
-<li><p>关联关系：类和类之间的连接，一个类可以知道另一个类的属性、方法，在JAVA语言中使用成员变量体现。在当前对象中含有指向其他对象的引用，那么当前对象和被指向的对象之间就是关联关系，如我和朋友的关系。</p>
-</li>
-<li><p>聚合关系：是关联关系的一种，是较强的关联关系，是整体和部分的关系。整体不依赖部分，部分也不依赖整体，整体无法决定部分的生命周期，如教室与单个学生的关系是聚合关系，教室与学生的集合之间的关系是关联关系。</p>
-</li>
-<li><p>合成关系：合成关系和聚合关系相似，区别在于整体和部分是紧密相连的，整体的生命周期决定部分的生命周期，如人和四肢的关系。</p>
-</li>
-<li><p>依赖关系 </p>
-</li>
+        <h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><a id="more"></a>
+<pre><code>for(int i=a.length-1;i&gt;0;i--) {
+    for(int j=0;j&lt;i;j++) {
+        if(a[j]&gt;a[j+1]) {
+            int temp=0;
+            temp=a[j+1];
+            a[j+1]=a[j];
+            a[j]=temp;
+        }
+    }
+}</code></pre><h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><pre><code>for(int i=0;i&lt;a.length-1;i++) {
+    int min =i;
+    for(int j=i;j&lt;a.length-1;j++) {
+        if(a[min]&gt;a[j+1]) {
+            min=j+1;
+        }
+    }
+    if(min!=i) {
+        int temp=0;
+        temp=a[i];
+        a[i]=a[min];
+        a[min]=temp;
+    }
+}</code></pre><h2 id="二分法查找"><a href="#二分法查找" class="headerlink" title="二分法查找"></a>二分法查找</h2><ol>
+<li><p>二分法查找是建立在已经排序的基础之上。</p>
+<pre><code>public static int binarySearch (int []a,int destElement) {
+    int begin=0;
+    int end =a.length-1;
+
+    while (begin&lt;=end) {
+        int mid= (begin+end)/2;
+        if(a[mid]==destElement) {
+            return mid;
+        }
+        else if(a[mid]&lt;destElement) {
+            begin=mid+1;
+        }
+        else if(a[mid]&gt;destElement) {
+            end=mid-1;
+        }
+    }
+    return -1;
+}</code></pre></li>
 </ol>
-<h2 id="参考链接：https-www-bilibili-com-video-av11477533-p-96"><a href="#参考链接：https-www-bilibili-com-video-av11477533-p-96" class="headerlink" title="参考链接：https://www.bilibili.com/video/av11477533/?p=96"></a>参考链接：<a href="https://www.bilibili.com/video/av11477533/?p=96" target="_blank" rel="noopener">https://www.bilibili.com/video/av11477533/?p=96</a></h2>
+
       
 
       
@@ -266,7 +295,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/02/%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,18 +309,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/02/is-a%E3%80%81is-like-a%E3%80%81has-a/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          is-a、is-like-a、has-a
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/02/%E5%86%85%E9%83%A8%E7%B1%BB/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">内部类</div>
+    <a href="/2019/11/02/%E6%95%B0%E7%BB%84%E8%AF%A6%E8%A7%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数组详解</div>
       <i class="icon-circle-right"></i>
     </a>
   

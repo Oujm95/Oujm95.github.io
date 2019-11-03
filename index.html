@@ -151,6 +151,71 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-数组的排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/">数组的排序</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2019-11-03T03:06:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2>
+        
+          <a class="article-more-a" href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-数组详解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -171,47 +236,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="数组（Array）"><a href="#数组（Array）" class="headerlink" title="数组（Array）"></a>数组（Array）</h2><ol>
-<li>数组是一种引用类型，是一种简单的、线性的数据结构。</li>
-<li>数组是一种容器，可以用来存储其他的任意数据类型的元素。</li>
-<li>数组分为一维数组、二维数组、多维数组。</li>
-<li>数组中存储的元素的数据类型必须是一致的。</li>
-<li>数组的长度不可变，数组一旦创建长度是不可变的。</li>
-<li>数组拿首元素的内存地址作为数组对象的内存地址。</li>
-<li>数组优点：查找效率高 缺点：随意的增删元素效率低。</li>
-</ol>
-<p>关于main方法中的参数列表  String [] args</p>
-<ol>
-<li>String [] args是专门用来接收命令行参数的。</li>
-</ol>
-<h2 id="数组的拷贝"><a href="#数组的拷贝" class="headerlink" title="数组的拷贝"></a>数组的拷贝</h2><pre><code>//系统的拷贝数组方法
- int [] a = { 1,2,3,4,5,6,7};
- int [] b = {10,20,30,40,50,60,70,80};
- System.arraycopy(a, 1, b, 3, 3);          
- for(int l=0;l&lt;b.length;l++) {
-     System.out.println(b[l]);
-//System.arraycopy(源数组, 源数组下标, 目标数组, 目标数组下标, 拷贝的长度);</code></pre><h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><p>二维数组是一个特殊的一维数组，特殊在这个一维数组中每一个元素都是一个一维数组。</p>
-<ul>
-<li>遍历二维数组</li>
-<li><pre><code>    //遍历二维数组
-for(int i=0;i&lt;a.length;i++) {
-    for(int j=0;j&lt;a[i].length;j++) {
-        System.out.print(a[i][j]+&quot;\t&quot;);
-    }
-    System.out.println();
-}</code></pre></li>
-</ul>
-<p>动态初始化二维数组</p>
-<pre><code>public static void main(String[] args) {
-    // 二维数组的动态初始化
-    int [] [] a = new int [4][5];
-    for(int i=0;i&lt;a.length;i++) {
-        for(int j=0;j&lt;a[i].length;j++) {
-            System.out.print(a[i][j]+&quot;\t&quot;);
-        }
-        System.out.println();
-    }
-}</code></pre>
+        <h2 id="数组（Array）"><a href="#数组（Array）" class="headerlink" title="数组（Array）"></a>数组（Array）</h2>
+        
+          <a class="article-more-a" href="/2019/11/02/%E6%95%B0%E7%BB%84%E8%AF%A6%E8%A7%A3/#more">more >></a>
+        
       
 
       
@@ -273,70 +301,10 @@ for(int i=0;i&lt;a.length;i++) {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="异常的基本概念"><a href="#异常的基本概念" class="headerlink" title="异常的基本概念"></a>异常的基本概念</h2><ol>
-<li>在程序运行过程中发生的错误，被称为异常（Excecption）。</li>
-<li>异常模拟的是现实世界中“不正常”的现象。</li>
-<li>JAVA中采用类的形式模拟异常。</li>
-<li>类是可以创建对象的  NullPointerException e =0x1234; e是引用类型，e中保存的内存地址指向堆中的“对象”。这个对象属于NullPointerException类，这个对象表示真实发生的异常事件，NullPointerException是一类异常。如“交通事故”是现实世界的一类异常，某地发生的一起连环撞车就是一个异常事件。</li>
-</ol>
-<h2 id="异常机制的作用"><a href="#异常机制的作用" class="headerlink" title="异常机制的作用"></a>异常机制的作用</h2><ul>
-<li>程序发生发生异常事件之后，输出详细的异常信息，程序员可通过这些异常信息对程序进行处理。</li>
-<li>异常处理机制是程序更加健壮。</li>
-</ul>
-<h2 id="异常的层次结构"><a href="#异常的层次结构" class="headerlink" title="异常的层次结构"></a>异常的层次结构</h2><p>异常主要分为：错误、一般性异常（受控异常）、运行期异常（非受控异常）</p>
-<ul>
-<li>错误（Error）：JAVA程序中出现了错误，错误是不能处理的，程序直接退出JVM。</li>
-<li>异常（Exception）：异常是可处理的，如果没有处理异常，则程序直接退出JVM。</li>
-</ul>
-<p>–</p>
-<ol>
-<li>运行时异常（RuntimeException）：运行时阶段程序员不需要对其进行处理，发生几率低。</li>
-<li>编译时异常：所有Exception的直接子类都是“编译时异常”。所有的编译时异常，要求程序员在编写程序阶段必须对它进行处理，如果不处理的话，编译无法通过。处理编译时异常有两种方式：一种是捕捉：try…catch…，另一种是声明抛出就是在方法声明的位置使用throws关键字抛出异常，发生几率高。</li>
-</ol>
-<h2 id="声明抛出（throws）"><a href="#声明抛出（throws）" class="headerlink" title="声明抛出（throws）"></a>声明抛出（throws）</h2><ul>
-<li>在方法声明的位置上使用throws关键字向上抛出异常</li>
-<li>使用throws处理异常不是真正的处理异常而是推卸责任，谁调用的就会抛给谁</li>
-</ul>
-<h2 id="捕捉-try…catch…"><a href="#捕捉-try…catch…" class="headerlink" title="捕捉(try…catch…)"></a>捕捉(try…catch…)</h2><ul>
-<li><p>语法：</p>
-<pre><code>try{
-   可能出现异常的代码；
-}catch(异常类型1 变量){
- 处理异常的代码；
-}catch（异常类型2 变量）{
- 处理异常的代码；
-}</code></pre></li>
-<li><p>catch语句块可以写多个，但是必须从上到下，catch必须从小类型异常到大类型异常捕捉。</p>
-</li>
-<li><p>try…catch…中最多执行1个catch语句块。执行之后try…catch…语句块就结束了。</p>
-</li>
-</ul>
-<h2 id="getMessage方法"><a href="#getMessage方法" class="headerlink" title="getMessage方法"></a>getMessage方法</h2><p>得到信息不够详细</p>
-<h2 id="printStackTrace方法"><a href="#printStackTrace方法" class="headerlink" title="printStackTrace方法"></a>printStackTrace方法</h2><p>打印堆栈异常信息：一般都会使用该方式去调试程序<br>##finally语句块</p>
-<ol>
-<li>finally语句块可以直接跟try语句块联用。try…finally…</li>
-<li>try…catch…finally…</li>
-<li>在finally语句块中得到语句是一定会被执行的，所以通常在程序中为了保证某资源一定会被释放，所以一般在finally语句块释放资源。</li>
-<li>只有在执行finally语句块之前退出了JVM的情况下，finally语句块才不会执行。</li>
-</ol>
-<h2 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h2><p>例子：自定义“无效名字异常”</p>
-<ol>
-<li><p>编译时异常，直接继承Exception</p>
-</li>
-<li><p>运行时异常，直接继承RuntimeException</p>
-<pre><code>public class IllegalNameException extends Exception { //编译时异常
-//public class IllegalNameException extends RuntimeException { //运行时异常
-    // 定义异常一般提供两个构造方法    
-        public IllegalNameException() {}
-
-        public IllegalNameException(String msg){
-            super();
-        }
-}</code></pre><h2 id="方法重写与异常"><a href="#方法重写与异常" class="headerlink" title="方法重写与异常"></a>方法重写与异常</h2><p>重写的方法不能比被重写的方法抛出更宽泛的异常</p>
-</li>
-</ol>
-<p>子类永远不能抛出比父类更多的异常                    </p>
-<h2 id="如何手动抛出异常"><a href="#如何手动抛出异常" class="headerlink" title="如何手动抛出异常"></a>如何手动抛出异常</h2><h2 id="详情参考：https-www-bilibili-com-video-av11477533-p-106"><a href="#详情参考：https-www-bilibili-com-video-av11477533-p-106" class="headerlink" title="详情参考：https://www.bilibili.com/video/av11477533/?p=106"></a>详情参考：<a href="https://www.bilibili.com/video/av11477533/?p=106" target="_blank" rel="noopener">https://www.bilibili.com/video/av11477533/?p=106</a></h2>
+        <h2 id="异常的基本概念"><a href="#异常的基本概念" class="headerlink" title="异常的基本概念"></a>异常的基本概念</h2>
+        
+          <a class="article-more-a" href="/2019/11/02/%E5%BC%82%E5%B8%B8%E6%9C%BA%E5%88%B6/#more">more >></a>
+        
       
 
       
@@ -398,10 +366,10 @@ for(int i=0;i&lt;a.length;i++) {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="is-a"><a href="#is-a" class="headerlink" title="is-a"></a>is-a</h2><p>A is-a B :继承关系，A继承B</p>
-<h2 id="is-like-a"><a href="#is-like-a" class="headerlink" title="is-like-a"></a>is-like-a</h2><p>A is-like-a B ：实现关系，A实现B</p>
-<h2 id="has-a"><a href="#has-a" class="headerlink" title="has-a"></a>has-a</h2><p>A has-a B ：关联关系，A关联B</p>
-
+        <h2 id="is-a"><a href="#is-a" class="headerlink" title="is-a"></a>is-a</h2>
+        
+          <a class="article-more-a" href="/2019/11/02/is-a%E3%80%81is-like-a%E3%80%81has-a/#more">more >></a>
+        
       
 
       
@@ -463,21 +431,10 @@ for(int i=0;i&lt;a.length;i++) {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="类之间的关系"><a href="#类之间的关系" class="headerlink" title="类之间的关系"></a>类之间的关系</h2><ol>
-<li><p>泛化关系：类和类之间的继承关系、接口和接口之间的继承关系</p>
-</li>
-<li><p>实现关系：类对接口的实现关系</p>
-</li>
-<li><p>关联关系：类和类之间的连接，一个类可以知道另一个类的属性、方法，在JAVA语言中使用成员变量体现。在当前对象中含有指向其他对象的引用，那么当前对象和被指向的对象之间就是关联关系，如我和朋友的关系。</p>
-</li>
-<li><p>聚合关系：是关联关系的一种，是较强的关联关系，是整体和部分的关系。整体不依赖部分，部分也不依赖整体，整体无法决定部分的生命周期，如教室与单个学生的关系是聚合关系，教室与学生的集合之间的关系是关联关系。</p>
-</li>
-<li><p>合成关系：合成关系和聚合关系相似，区别在于整体和部分是紧密相连的，整体的生命周期决定部分的生命周期，如人和四肢的关系。</p>
-</li>
-<li><p>依赖关系 </p>
-</li>
-</ol>
-<h2 id="参考链接：https-www-bilibili-com-video-av11477533-p-96"><a href="#参考链接：https-www-bilibili-com-video-av11477533-p-96" class="headerlink" title="参考链接：https://www.bilibili.com/video/av11477533/?p=96"></a>参考链接：<a href="https://www.bilibili.com/video/av11477533/?p=96" target="_blank" rel="noopener">https://www.bilibili.com/video/av11477533/?p=96</a></h2>
+        <h2 id="类之间的关系"><a href="#类之间的关系" class="headerlink" title="类之间的关系"></a>类之间的关系</h2>
+        
+          <a class="article-more-a" href="/2019/11/02/%E7%B1%BB%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/#more">more >></a>
+        
       
 
       
@@ -539,31 +496,10 @@ for(int i=0;i&lt;a.length;i++) {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><ul>
-<li>可分为静态内部类、成员内部类、局部内部类、匿名内部类</li>
-<li>内部类重要的作用：可以访问外部类中私有的数据</li>
-</ul>
-<h2 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h2><ol>
-<li>静态内部类可以等同看做静态变量</li>
-<li>静态内部类可以直接访问外部类的静态变量和静态方法，但不能访问成员变量和成员方法</li>
-</ol>
-<h2 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h2><ol>
-<li>成员内部类可以等同看做成员变量</li>
-<li>成员内部类不能有静态声明</li>
-<li>成员内部类可以访问外部类的所有数据</li>
-</ol>
-<h2 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h2><ol>
-<li>局部内部类可以等同看做局部变量</li>
-<li>局部内部类不能用访问控制权限修饰符修饰</li>
-<li>局部内部类不能有静态声明</li>
-<li>从局部内部类中访问局部变量，局部变量必须被final修饰，声明成最终类型</li>
-</ol>
-<h2 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h2><ol>
-<li>指的是没有名字的内部类</li>
-<li>优点：少定义一个类</li>
-<li>缺点：无法重复使用</li>
-</ol>
-
+        <h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2>
+        
+          <a class="article-more-a" href="/2019/11/02/%E5%86%85%E9%83%A8%E7%B1%BB/#more">more >></a>
+        
       
 
       
@@ -625,36 +561,10 @@ for(int i=0;i&lt;a.length;i++) {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><p>Object类是所有类的父类,其中包含下列方法</p>
-<h2 id="toString方法-返回JAVA对象的字符串表现形式"><a href="#toString方法-返回JAVA对象的字符串表现形式" class="headerlink" title="toString方法:返回JAVA对象的字符串表现形式"></a>toString方法:返回JAVA对象的字符串表现形式</h2><ul>
-<li><p>现实开发中，需要重写,重写toString方法，根据项目需求而定</p>
-</li>
-<li><p>print方法后面括号中如果是一个引用类型，会默认调用引用类型的toString方法</p>
-</li>
-<li><p>toString方法源码</p>
-<pre><code>public String toString (){
-    return getClass().getName()+&quot;@&quot;+Integer.toHexString(hashCode());
-}</code></pre></li>
-<li><p>Object中toString返回：类名@JAVA对象的内存地址经过哈希算法得出的int类型值转换成的16进制值</p>
-</li>
-<li><p>这个输出结果可以等同看做JAVA对象在堆中的内存地址</p>
-</li>
-</ul>
-<h2 id="equals方法：比较两个引用的内存地址"><a href="#equals方法：比较两个引用的内存地址" class="headerlink" title="equals方法：比较两个引用的内存地址"></a>equals方法：比较两个引用的内存地址</h2><ul>
-<li><p>equals源码</p>
-<pre><code>public boolean equals (Object obj){
-    return (this==obj);
-}</code></pre></li>
-<li><p>equals两边如果是引用类型，则比较引用地址，如果相同返回true，不同返回false</p>
-</li>
-<li><p>equals设计目的：判断两个对象是否一样</p>
-</li>
-<li><p>在现实的业务逻辑中，不应该比较内存地址，应该是比较内容，所以需要根据需求重写equals方法</p>
-</li>
-<li><p>JAVA语言比较字符串是否一致：调用String类中的equals方法，String类中的equals方法已被重写，比较的是内容</p>
-</li>
-</ul>
-
+        <h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2>
+        
+          <a class="article-more-a" href="/2019/11/02/Object%E7%B1%BB-md/#more">more >></a>
+        
       
 
       
@@ -778,51 +688,10 @@ for(int i=0;i&lt;a.length;i++) {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="接口语法"><a href="#接口语法" class="headerlink" title="接口语法"></a>接口语法</h2><ul>
-<li>1.接口也是一种引用类型，可以等同看做类</li>
-<li>2.如何定义接口，语法：【修饰符】 interface 接口名{}</li>
-<li>3.接口中只能出现常量和抽象方法</li>
-<li>4.接口其实是一个特殊的抽象类，特殊在接口是完全抽象的；</li>
-<li>5.接口中没有构造方法，无法被实例化</li>
-<li>6.接口和接口间可以多继承</li>
-<li>7.一个类可以实现多个接口。“这里的实现可以等同看做继承”</li>
-<li>8.一个非抽象的类实现接口，需要将接口中所有的方法实现/重写</li>
-</ul>
-<p>接口中的常量格式必须用  public static final 修饰，但可以省略不写</p>
-<p>接口中所有抽象方法都是  public abstract 修饰，同样可以省略</p>
-<p>implements关键字 实现的意思</p>
-<h2 id="接口作用"><a href="#接口作用" class="headerlink" title="接口作用"></a>接口作用</h2><ol>
-<li><p>可以使项目分层，所有层都面向接口开发，能提高开发效率</p>
-</li>
-<li><p>接口让代码和代码之间的耦合度降低，就像内存条和主板一样，变得“可插拔”，可以随意切换</p>
-<pre><code>public interface CustomerService {
-
-//定义一个退出系统的方法
-void logout();
-
-}</code></pre></li>
-</ol>
-<p>编写接口的实现类<br>该类的编写完全是面向接口去实现的</p>
-<pre><code>    public class CustomerServiceImpl implements CustomerService {
-
-    //对接口中的抽象方法进行实现
-    public void logout(){
-
-    System.out.println(&quot;成功退出系统！&quot;)
-
-    }
-}</code></pre><p>面向接口调用</p>
-<pre><code>    public class Test {
-
-        public static void main (String [] arg){
-
-            //要执行CustomerService中的logout方法
-            //以下程序面向接口去调用
-            CustomerService cs =new CustomerServiceImpl ();  //多态
-            //调用
-            cs.logout();
-        }
-}</code></pre>
+        <h2 id="接口语法"><a href="#接口语法" class="headerlink" title="接口语法"></a>接口语法</h2>
+        
+          <a class="article-more-a" href="/2019/11/01/%E6%8E%A5%E5%8F%A3%E8%AF%AD%E6%B3%95/#more">more >></a>
+        
       
 
       
@@ -884,14 +753,10 @@ void logout();
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="博客部署Github问题"><a href="#博客部署Github问题" class="headerlink" title="博客部署Github问题"></a>博客部署Github问题</h2><p>完成我的第一篇博客文章后，在我想要将其部署至github上时出现了问题，DOS系统反馈</p>
-<ul>
-<li>he file will have its original line endings in your working directory</li>
-<li>On branch master nothing to commit, working tree clean</li>
-<li>百度查阅后，输入hexo clean后，再次hexo d部署成功。</li>
-</ul>
-<p>不知道是发生了什么问题，暂且记录下来以备后用。</p>
-
+        <h2 id="博客部署Github问题"><a href="#博客部署Github问题" class="headerlink" title="博客部署Github问题"></a>博客部署Github问题</h2>
+        
+          <a class="article-more-a" href="/2019/11/01/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E8%87%B3Github%E4%B8%8A%E5%87%BA%E7%8E%B0%E9%97%AE%E9%A2%98/#more">more >></a>
+        
       
 
       
@@ -904,118 +769,6 @@ void logout();
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/11/01/%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E8%87%B3Github%E4%B8%8A%E5%87%BA%E7%8E%B0%E9%97%AE%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2019-11-01T01:48:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-01</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="搭建个人博客具体步骤"><a href="#搭建个人博客具体步骤" class="headerlink" title="搭建个人博客具体步骤"></a>搭建个人博客具体步骤</h2><p>这里是基于HEXO博客框架–Windows系统搭建的</p>
-<ul>
-<li>首先下载安装Node.js(下载网址：Nodejs.org)</li>
-</ul>
-<hr>
-<ul>
-<li>下载Git并安装，点击进入Git\bin\bash.exe配置环境变量及身份</li>
-<li>配置Git环境变量： </li>
-<li>找到git安装路径中git-core的位置，如F:\Git\mingw64\libexec\git-core</li>
-<li>右键“计算机”-&gt;“属性”-&gt;“高级系统设置”-&gt;“环境变量”-&gt;在下方的“系统变量”中找到“path”-&gt;选中“path”并选择“编辑”-&gt;将找到的bin和git-core路径复制到其中-&gt;保存并退出</li>
-<li>注意：“path”中，每个路径之间要以英文输入状态下的分号——“;”作为间隔</li>
-<li>-</li>
-<li>配置身份：</li>
-<li>git config –global user.name “用户名” </li>
-<li>git config –global user.email “用户邮箱”</li>
-</ul>
-<hr>
-<ul>
-<li>打开DOS系统(win+R)</li>
-<li>输入 npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></li>
-<li>输入 cnpm install -g hexo-cli 安装HEXO博客框架</li>
-<li>选择目录(F:)新建文件夹 输入chdir blog</li>
-<li>输入 hexo init 初始化一个博客</li>
-<li>输入 hexo s 启动博客 在浏览器中网址栏输入<a href="http://localhost:4000即可启动" target="_blank" rel="noopener">http://localhost:4000即可启动</a></li>
-<li>-</li>
-<li>接下来创建第一篇博客文章</li>
-<li>输入 hexo n “我的第一篇博客文章”，此操作会在如F:\blog\source_posts 这样的目录下生成一个 我的第一篇博客文章.md文件</li>
-<li>输入 cd\source_posts 进入该目录</li>
-<li>输入 start 我的第一篇博客文章.md 打开该文件即可进行编辑内容 建议下载MarkdownPad2软件打开此类文件</li>
-<li>内容完成后，保存退出</li>
-<li>在DOS系统上输入cd../.. 退到blog目录</li>
-<li>输入 hexo g 即可生成文件</li>
-<li>再次输入hexo s 启动博客 网址栏输入localhost：4000启动刷新即可看见 “我的第一篇博客文章”</li>
-<li>至此个人博客已搭建完毕</li>
-<li>-</li>
-<li>然后把个人博客部署到github.com上</li>
-<li>首先登陆github.com个人网页，在网页右上角加号处点击”New repository”建立新仓</li>
-<li>在”Repository name”栏输入”xxxx”.github.io,此处xxxx为你的用户名</li>
-<li>注意：此处必须按照此格式，不能更改</li>
-<li>“Description”为描述栏，自由发挥即可，最后点击“Create repository”完成创建</li>
-<li>再返回DOS系统操作，输入 cnpm install –save hexo-deployer-git 安装一个部署的插件</li>
-<li>输入 start _config.yml打开此文件直接拖到最后一行找到 type：</li>
-<li>在type：加上git后，注意git和冒号间需要一个空格</li>
-<li>换行输入repo：<a href="https://github.com/xxxx/xxxx.github.ioigit" target="_blank" rel="noopener">https://github.com/xxxx/xxxx.github.ioigit</a> xxxx为你的用户名</li>
-<li>换行输入 branch:master 保存退出</li>
-<li>换回DOS系统 输入hexo d 将个人博客部署至远端</li>
-<li>此时DOS系统会要求你输入你的github用户名及密码登入，输入回车即可</li>
-<li>注意密码输入的时候是不会被显示出来的</li>
-<li>至此，个人博客即被部署至Github上了</li>
-</ul>
-<h2 id="参考网址：https-www-bilibili-com-video-av44544186"><a href="#参考网址：https-www-bilibili-com-video-av44544186" class="headerlink" title="参考网址：https://www.bilibili.com/video/av44544186"></a>参考网址：<a href="https://www.bilibili.com/video/av44544186" target="_blank" rel="noopener">https://www.bilibili.com/video/av44544186</a></h2><h2 id="特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难"><a href="#特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难" class="headerlink" title="特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难"></a>特别感谢CodeSheep大佬手把手教导以及各个弹幕大神帮助解决疑难</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
         </p>
       
 
