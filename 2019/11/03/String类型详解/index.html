@@ -6,16 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Object类.md | Hexo</title>
+  <title>String类型详解 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Object类">
+  <meta name="description" content="String">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Object类.md">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;02&#x2F;Object%E7%B1%BB-md&#x2F;index.html">
+<meta property="og:title" content="String类型详解">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;03&#x2F;String%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Object类">
+<meta property="og:description" content="String">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-03T06:24:49.385Z">
+<meta property="og:updated_time" content="2019-11-03T08:52:49.184Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -152,56 +152,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Object类-md" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-String类型详解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Object类.md
+      String类型详解
     </h1>
   
 
         
-        <a href="/2019/11/02/Object%E7%B1%BB-md/" class="archive-article-date">
-  	<time datetime="2019-11-02T00:26:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
+        <a href="/2019/11/03/String%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3/" class="archive-article-date">
+  	<time datetime="2019-11-03T06:45:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-03</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Object类"><a href="#Object类" class="headerlink" title="Object类"></a>Object类</h2><a id="more"></a>
-<p>Object类是所有类的父类,其中包含下列方法</p>
-<h2 id="toString方法-返回JAVA对象的字符串表现形式"><a href="#toString方法-返回JAVA对象的字符串表现形式" class="headerlink" title="toString方法:返回JAVA对象的字符串表现形式"></a>toString方法:返回JAVA对象的字符串表现形式</h2><ul>
-<li><p>现实开发中，需要重写,重写toString方法，根据项目需求而定</p>
+        <h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><a id="more"></a>
+<ul>
+<li><p>java.lang.String；是字符串类型。</p>
 </li>
-<li><p>print方法后面括号中如果是一个引用类型，会默认调用引用类型的toString方法</p>
+<li><p>String类是不可变类，也就是说String对象声明后，将不可修改。</p>
 </li>
-<li><p>toString方法源码</p>
-<pre><code>public String toString (){
-    return getClass().getName()+&quot;@&quot;+Integer.toHexString(hashCode());
-}</code></pre></li>
-<li><p>Object中toString返回：类名@JAVA对象的内存地址经过哈希算法得出的int类型值转换成的16进制值</p>
+<li><p>提升字符串的访问效率：在程序中使用“缓存”技术，所以在JAVA中所有中“双引号”括起来的字符串都会在“字符串常量池”中创建一份。字符串常量池在方法区中存储。</p>
 </li>
-<li><p>这个输出结果可以等同看做JAVA对象在堆中的内存地址</p>
+<li><p>在程序执行过程中，如果程序用到某个字符串，如“abc”，那么程序会在“字符串常量池”中搜索该字符串，如果没有找到则在字符串常量池中创建一个“abc”字符串，如果找到就直接拿过来直接用。（字符串常量池是一个缓存区，为了提供程序运行效率）</p>
+</li>
+<li><p>比较两个字符串是否一致，必须使用String类提供的equals方法。</p>
 </li>
 </ul>
-<h2 id="equals方法：比较两个引用的内存地址"><a href="#equals方法：比较两个引用的内存地址" class="headerlink" title="equals方法：比较两个引用的内存地址"></a>equals方法：比较两个引用的内存地址</h2><ul>
-<li><p>equals源码</p>
-<pre><code>public boolean equals (Object obj){
-    return (this==obj);
-}</code></pre></li>
-<li><p>equals两边如果是引用类型，则比较引用地址，如果相同返回true，不同返回false</p>
+<h2 id="字符串常用构造方法"><a href="#字符串常用构造方法" class="headerlink" title="字符串常用构造方法"></a>字符串常用构造方法</h2><p>参考：<a href="https://www.bilibili.com/video/av11477533/?p=125" target="_blank" rel="noopener">https://www.bilibili.com/video/av11477533/?p=125</a></p>
+<h2 id="字符串常见方法"><a href="#字符串常见方法" class="headerlink" title="字符串常见方法"></a>字符串常见方法</h2><ol>
+<li><p>返回boolean类型    .endswith(String endStr)是否以“xx”结尾 ；   .startswith(String endStr) 是否以“xx”开始</p>
+<pre><code>System.out.println(&quot;Good job! Well done!&quot;.endsWith(&quot;!&quot;));// true
+System.out.println(&quot;Good job! Well done!&quot;.endsWith(&quot;! &quot;));// false
+System.out.println(&quot;Good job! Well done!&quot;.endsWith(&quot;1&quot;)); //false
+System.out.println(&quot;Good job! Well done!&quot;.endsWith(&quot;Good job! Well done!&quot;));//false</code></pre></li>
+<li><p>返回boolean类型    .equalsIgnoreCase（String anotherString）</p>
+<pre><code>System.out.println(&quot;done&quot;.equalsIgnoreCase(&quot;Done&quot;));</code></pre></li>
+<li><p>返回byte数组         .getBytes()</p>
+<pre><code>byte [] bytes=&quot;awe&quot;.getBytes();
+    for(int i=0;i&lt;3;i++) {
+        System.out.println(bytes[i]);
+    }</code></pre></li>
+<li><p>返回指定子字符串在此字符串第一次出现的索引  返回int类型  indexOf(String str);</p>
+<pre><code>System.out.println(&quot;学习使我开心，努力让我快乐&quot;.indexOf(&quot;努力&quot;));</code></pre></li>
+<li><p>返回指定子字符串在此字符串第一次出现的索引,从指定的索引处开始  返回int类型  indexOf(String str，int fromIndex);</p>
+<pre><code>System.out.println(&quot;学习使我开心，努力让我快乐&quot;.indexOf(&quot;努力&quot;，2));</code></pre></li>
+<li><p>返回指定子字符串在此字符串最后一次出现的索引 int lastIndexOf(String str)</p>
 </li>
-<li><p>equals设计目的：判断两个对象是否一样</p>
+<li><p>返回此字符串的长度 int  .lenth()</p>
 </li>
-<li><p>在现实的业务逻辑中，不应该比较内存地址，应该是比较内容，所以需要根据需求重写equals方法</p>
+<li><p>String replaceAll(String s1,String s2);</p>
 </li>
-<li><p>JAVA语言比较字符串是否一致：调用String类中的equals方法，String类中的equals方法已被重写，比较的是内容</p>
+</ol>
+<p>9.String [] split (String s); </p>
+<pre><code>String myTime=&quot;2008,08,09&quot;;
+String [] a =myTime.split(&quot;,&quot;);
+for(int j=0;j&lt;a.length;j++) {
+    System.out.println(a[j]);
+}</code></pre><ol>
+<li>String.substring(int begin)   String.substring(int begin,int end);</li>
+</ol>
+<p>截取字符串，从索引 begin处开始，到索引 end处结束。</p>
+<ol start="2">
+<li><p>char [] toCharArray();</p>
 </li>
-</ul>
+<li><p>.toUpperCase(); 转换为大写 .toLowerCase(); 转换为小写</p>
+</li>
+<li><p>String .trim(); 去除字符串前后所有空格</p>
+</li>
+<li><p>.valueOf(); 转换为字符串</p>
+</li>
+</ol>
 
       
 
@@ -281,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/02/Object%E7%B1%BB-md/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/03/String%E7%B1%BB%E5%9E%8B%E8%AF%A6%E8%A7%A3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -295,18 +322,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/02/%E5%86%85%E9%83%A8%E7%B1%BB/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          内部类
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/01/md%E6%96%87%E4%BB%B6%E4%B8%AD%E8%AF%AD%E6%B3%95%E9%94%99%E8%AF%AF%E4%BC%9A%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E4%B8%8A%E4%BC%A0%E8%87%B3%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">.md文件中语法错误会导致无法上传至博客</div>
+    <a href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数组的排序</div>
       <i class="icon-circle-right"></i>
     </a>
   
