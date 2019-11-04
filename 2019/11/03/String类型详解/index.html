@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="String">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-03T08:52:49.184Z">
+<meta property="og:updated_time" content="2019-11-03T09:52:04.375Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -229,6 +229,38 @@ for(int j=0;j&lt;a.length;j++) {
 <li><p>.valueOf(); 转换为字符串</p>
 </li>
 </ol>
+<h2 id="StringBuffer和StringBuilder"><a href="#StringBuffer和StringBuilder" class="headerlink" title="StringBuffer和StringBuilder"></a>StringBuffer和StringBuilder</h2><p>java.lang.StringBuffer<br>java.lang.StringBuilder</p>
+<ol>
+<li><p>StringBuffer和StringBuilder是一个字符串缓冲区</p>
+</li>
+<li><p>工作原理：预先在内存中申请一块空间，以容纳字符序列，如果预留的空间不够用，则自动扩容，以容纳更多的字符序列</p>
+</li>
+<li><p>String Buffer和String Builder和String的区别?<br>String是不可变的字符序列，存储于方法区常量池中<br>String Buffer底层是一个char数组，并且是可变的，可以自动扩容  </p>
+</li>
+<li><p>StringBuffer和StringBuilder的默认初始化容量是16</p>
+</li>
+<li><p>如何优化StringBuffer和StringBuilder<br>最好在创建StringBuffer之前，预测StringBuffer的存储字符数量，然后再创建StringBuffer的时候指定初始化容量的方式创建StringBuffer，为了减少底层数组的拷贝，提高效率。</p>
+<pre><code>public static void main(String[] args) {
+    // 推荐字符串频繁拼接使用StringBuffer或者StringBuilder 
+    StringBuffer sb = new StringBuffer();
+
+    String [] ins = {&quot;唱歌&quot;,&quot;跳舞&quot;,&quot;rap&quot;,&quot;篮球&quot;};
+
+    for(int i=0;i&lt;ins.length;i++) {
+        if(i==ins.length-1) {
+            sb.append(ins[i]);
+        }
+        else {
+            sb.append(ins[i]);
+            sb.append(&quot;,&quot;);
+        }
+    }
+            System.out.println(sb);
+
+}</code></pre></li>
+<li><p>StringBuffer和StringBuilder的区别<br>StringBuffer是线程安全的（可以在多线程环境下使用不会出现问题）<br>StringBuilder是非线程安全的（在多线程环境下使用可能出现问题） </p>
+</li>
+</ol>
 
       
 
@@ -321,6 +353,15 @@ for(int j=0;j&lt;a.length;j++) {
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/11/03/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%88%9D%E6%AD%A5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          正则表达式初步
+        
+      </div>
+    </a>
   
   
     <a href="/2019/11/03/%E6%95%B0%E7%BB%84%E7%9A%84%E6%8E%92%E5%BA%8F/" id="article-nav-older" class="article-nav-link-wrap">
