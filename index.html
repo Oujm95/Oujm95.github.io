@@ -151,6 +151,71 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-反射机制" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/08/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/">reflect机制</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/08/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/" class="archive-article-date">
+  	<time datetime="2019-11-08T00:03:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="反射的基本概念"><a href="#反射的基本概念" class="headerlink" title="反射的基本概念"></a>反射的基本概念</h2>
+        
+          <a class="article-more-a" href="/2019/11/08/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/08/%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-多线程详解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -707,82 +772,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/11/04/%E6%97%A5%E6%9C%9F%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-包装类型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/03/%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B/">包装类型</a>
-    </h1>
-  
-
-        
-        <a href="/2019/11/03/%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2019-11-03T09:53:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="八种基础数据类型对应的包装类型"><a href="#八种基础数据类型对应的包装类型" class="headerlink" title="八种基础数据类型对应的包装类型"></a>八种基础数据类型对应的包装类型</h2><p>除int和char外，其余六种都是将首字母大写，int—Integer,char—Character </p>
-<p>Byte Integer Short Long  Double Float 直接继承java.lang.Number<br>Character Boolean 直接继承 java.lang.Object </p>
-<h1 id="以java-lang-Integer；类型为例，讲解八种类型"><a href="#以java-lang-Integer；类型为例，讲解八种类型" class="headerlink" title="以java.lang.Integer；类型为例，讲解八种类型"></a>以java.lang.Integer；类型为例，讲解八种类型</h1><p>int类型的最大值最小值：Integer.MIN_VALUE—-Integer.MAX_VALUE </p>
-<p>创建Integer类型对象<br>Integer i = 123;<br>Integer i1 =new Integer (“123”); 字符串里面必须是数字类型，否则会出现NumberFormatException（数字格式化异常）<br>Integer i3=Integer.valueOf(123);</p>
-<h2 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h2><p>将Integer类型数据转换为int类型<br>int i2 = i;—int i4= i1.intValue; </p>
-<p>重要: static int parseInt(String s); 将数字字符串里的数字转换为int类型,<br>int age =Integer.parseInt(“25”);<br>System.out.println(age+1);  </p>
-<p>将int类型的十进制转换为2进制   String s1= Integer.toBinaryString(10);<br>将int类型的十进制转换为8进制   String s2= Integer.toOctalString(10);<br>将int类型的十进制转换为16进制  String s3= Integer.toHexString(10);   </p>
-<h2 id="int-Integer-String-相互转换"><a href="#int-Integer-String-相互转换" class="headerlink" title="int Integer String 相互转换"></a>int Integer String 相互转换</h2><p>int—&gt;Integer<br>Integer i1= Integer.valueOf(23);<br>Integer i1= 23; 自动装箱(auto_boxing)</p>
-<p>Integer—&gt;int<br>int i2=i1.intValue();<br>int i2=i1;  自动拆箱(auto_unboxing)  </p>
-<p>String—&gt;Integer<br>Integer i3=Integer.valueOf(“10”);  </p>
-<p>Integer—&gt;String<br>String s1=i3.toString;  </p>
-<p>String—&gt;int<br>int i4=Integer.parseInt(“10”);  </p>
-<p>int—&gt;String<br>String s2 =10+””;</p>
-<h2 id="深入自动装箱，自动拆箱"><a href="#深入自动装箱，自动拆箱" class="headerlink" title="深入自动装箱，自动拆箱"></a>深入自动装箱，自动拆箱</h2><p>自动装箱，自动拆箱是程序编译阶段的一个概念，和程序运行无关。<br>自动装箱，自动拆箱主要目的是方便程序员编码。<br>比较两个Integer类型数据是否相等不能用”==”，需要使用equals方法。<br>JVM的方法区中有个“整型常量池”，包含-128~127。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/03/%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B/">展开全文 >></a>
         </p>
       
 
